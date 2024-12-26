@@ -18,7 +18,7 @@ CS WALA is an online platform dedicated to providing affordable and accessible e
 
 ## View
 
-https://github.com/ApraAditi/CSWALA---FAQ/blob/963163d6aa6baf65b6b15356ebd9691449615c7c/web%20view.jpg
-https://github.com/ApraAditi/CSWALA---FAQ/blob/963163d6aa6baf65b6b15356ebd9691449615c7c/phn%20view.jpg
+![image alt](https://github.com/ApraAditi/CSWALA---FAQ/blob/963163d6aa6baf65b6b15356ebd9691449615c7c/web%20view.jpg)
+![image alt](https://github.com/ApraAditi/CSWALA---FAQ/blob/963163d6aa6baf65b6b15356ebd9691449615c7c/phn%20view.jpg)
 ## Conclusion
 This FAQ page provides an intuitive and user-friendly interface for CS WALA users to find answers to common questions. Its responsive design ensures a seamless experience across various devices, while the interactive elements enhance user engagement. The project demonstrates the use of modern web technologies to create an effective and visually appealing web page.
