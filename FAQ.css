@@ -54,7 +54,7 @@ header {
   width: 100%;
   padding: 2rem 2.5rem;
   outline: none;
-  transition: transform 0.3s ease, background-color 0.4s; /* Added transform transition */
+  transition: transform 0.3s ease, background-color 0.4s; 
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -68,7 +68,7 @@ header {
 .active,
 .accordion:hover {
   background-color: #F0F5FF;
-  transform: scale(1.05); /* Zoom effect on hover */
+  transform: scale(1.05); 
 }
 
 .pannel {
@@ -83,7 +83,7 @@ header {
 }
 
 .faq.active .pannel {
-  max-height: 300px; /* Adjust the height as needed */
+  max-height: 300px; 
 }
 
 .pannel p {
@@ -137,7 +137,7 @@ nav {
   justify-content: space-between;
   flex-grow: 1;
   position: relative;
-  margin-right: 20px; /* Margin to create space from "Ask AI" */
+  margin-right: 20px; 
 }
 
 nav ul {
@@ -165,7 +165,7 @@ nav ul li a:hover {
 .ask-ai-container {
   display: flex;
   align-items: center;
-  margin-left: auto; /* Added to create space between "Ask AI" and nav */
+  margin-left: auto; 
 }
 
 .ask-ai-button {
@@ -175,7 +175,7 @@ nav ul li a:hover {
   padding: 10px 15px;
   border-radius: 5px;
   cursor: pointer;
-  margin-right: 10px; /* Added to create 10px gap between Ask AI and nav items */
+  margin-right: 10px; 
 }
 
 .ask-ai-button:hover {
@@ -233,30 +233,37 @@ nav ul li a:hover {
 }
 
 /* Footer */
+
 .site-footer {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
   padding: 20px 40px;
-  background-color: #0f3460;
+  background-color: #0f3460; 
   color: #ffffff;
   flex-wrap: wrap;
   box-sizing: border-box;
-  margin: 0;
+  width: 100%;
+  margin: 0 auto;
   position: relative;
 }
+
 .footer-container {
-  width: 100%;
+  max-width: 1200px; 
+  margin: 0 auto; 
+  width: 100%; 
+  display: flex;
+  flex-wrap: wrap; 
 }
 
 .footer-column {
   flex: 1;
   margin: 10px;
-  min-width: 200px;
+  min-width: 200px; 
 }
 
 .footer-column h3 {
-  color: #e94560;
+  color: #e94560; 
   margin-bottom: 10px;
   font-size: 1.2em;
 }
@@ -277,37 +284,69 @@ nav ul li a:hover {
 }
 
 .footer-column ul li a {
-  text-decoration: none;
-  color: #ffffff;
-  transition: transform 0.3s ease, color 0.3s ease;
+  text-decoration: none; 
+  color: #ffffff; 
+  transition: transform 0.3s ease, color 0.3s ease; 
+  display: inline-block;
 }
 
 .footer-column ul li a:hover {
-  color: #e94560; /* Accent color on hover */
-  transform: scale(1.1); /* Slight zoom effect on hover */
+  color: #e94560; 
+  animation: zoom 0.3s ease forwards; 
 }
 
+/* Footer Column - Social Links */
 .social-links {
+  text-align: left; 
+}
+
+.social-links h3 {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  color: #e94560; 
+}
+
+.social-icons {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start; 
   align-items: center;
-  gap: 15px;
-  margin-top: 10px;
+  gap: 25px; 
+  flex-wrap: wrap; 
 }
 
-.social-links a {
+.social-link {
   text-decoration: none;
-  font-size: 1.5em;
-  color: #ffffff;
-  transition: transform 0.3s ease, color 0.3s ease;
+  font-size: 1.5em; 
+  color: #ffffff; 
+  transition: transform 0.3s ease, color 0.3s ease; 
+  margin: 5px; 
 }
 
-.social-links a:hover {
-  color: #e94560; /* Accent color on hover */
-  transform: scale(1.2); /* Zoom effect for social media icons */
+.social-link i {
+  transition: transform 0.3s ease, color 0.3s ease; 
 }
 
-/* Footer responsiveness */
+.social-link:hover,
+.social-link:hover i {
+  color: #e94560; 
+  animation: zoom 0.3s ease forwards; 
+}
+
+/* Zoom Animation */
+@keyframes zoom {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+
+
+
+
+
+
 @media screen and (max-width: 768px) {
   .site-footer {
     flex-direction: column;
@@ -324,7 +363,12 @@ nav ul li a:hover {
 
   .social-links {
     margin-top: 20px;
-    flex-wrap: wrap;
+    text-align: center; /* Center the social links column */
+  }
+
+  .social-icons {
+    justify-content: center; /* Center icons within the social links */
+    gap: 15px; /* Adjust spacing between icons for smaller screens */
   }
 }
 
